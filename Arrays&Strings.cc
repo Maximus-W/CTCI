@@ -1,6 +1,3 @@
-
-
-//Solution with a data structure
 #include <string>
 #include <iostream>
 #include <algorithm>
@@ -13,14 +10,14 @@ using namespace std;
 
 
 
-#ifdef ONE_POINT_ONE
-
 /*
 1.1 IS UNIQUE: Implement an algorithm to determine if a string has all unique
                characters. What if you cannot use additional data structures?
 
 Assumptions: String is in ASCII which contains 128 characters
 */
+
+#ifdef ONE_POINT_ONE
 
 //Solution with a datastructure, O(n) runtime, O(1) space complexity
 bool unique_char(string s) {
@@ -40,7 +37,6 @@ bool unique_char(string s) {
   return true;
 }
 
-
 //Solution without a data structure, assuming s can be modified otherwise check
 //each char against all char after it in the string.
 bool unique_char_wds(string s) {
@@ -48,7 +44,6 @@ bool unique_char_wds(string s) {
   sort(s.begin(), s.end());
 
   //Iterate through the array to check if there are same chars side by side
-
   for (int i = 1; i < s.length(); ++i) {
     if (s.at(i-1) == s.at(i)) {
       return false;
