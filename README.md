@@ -1,3 +1,3 @@
 # CTCI
 
-This is a repository for solutions to CTCI as preperation for my upcoming interviews
+This is a repository for solutions to CTCI as preparation for my upcoming interviews
